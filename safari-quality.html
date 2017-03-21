@@ -10,6 +10,22 @@
         source: {
           dash: 'https://tvaesecond.akamaized.net/77340/MOV0000005_4092_(4092_ISMUSP).ism/MOV0000005_4092_(4092_ISMUSP).mpd',
           hls: 'https://tvaesecond.akamaized.net/77340/MOV0000005_4092_(4092_ISMUSP).ism/MOV0000005_4092_(4092_ISMUSP).m3u8'
+        },
+        style: {
+          aspectratio: '16:9',
+          keyboard: true,
+          ux: false
+        },
+        tweaks: {
+          file_protocol: true,
+          app_id: 'io.vigour.app',
+          restart_threshold: 4
+        },
+        playback: {
+          muted: false,
+          autoplay: true,
+          playsinline: true,
+          timeShift: false
         }
       }
 
