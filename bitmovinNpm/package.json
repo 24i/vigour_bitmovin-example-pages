@@ -1,0 +1,19 @@
+{
+  "name": "bitmovinNpm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "browserify ./index.js | uglifyjs > build.js",
+    "dev": "budo ./index.js:bundle.js --css ./bundle.css --pushstate --live"
+  },
+  "repository": {},
+  "license": "MIT",
+  "dependencies": {
+    "bitmovin-player": "7.0.1",
+    "bitmovin-player-ui": "^1.0.1",
+    "uglifyjs": "^2.4.0",
+    "browserify": "^14.1.0",
+    "budo": "^9.4.7"
+  }
+}
